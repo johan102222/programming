@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css"
+  </head>
+  <body>
+    <div id="initest">
+        <center>
+      nama:<input id="nama" type="text" />
+      <br />
+      Kelas:<input id="Kelas" type="number" />
+      <br />
+      Jurusan:<input id="Jurusan" type="text" />
+      <br />
+      Tgl lahir:<input id="Tgl" type="date" />Tgl lahir
+      <br />
+      <button onclick="formulir()">Submit</button>
+      </center>
+    </div>
+
+    <div id="dataform">
+      <center>
+        <h3>Bio Data</h3>
+        <hr />
+        <p id="nick"></p>
+        <p id="test2"></p>
+        <p id="test3"></p>
+        <p id="test4"></p>
+      </center>
+    </div>
+    <script>
+      let nama = "";
+      let Kelas = "";
+      let Jurusan = "";
+      let Tgl = "";
+
+      function formulir() {
+        saveInput();
+        displayInput();
+      }
+
+      function saveInput() {
+        nama = document.getElementById("nama").value;
+        Kelas = document.getElementById("Kelas").value;
+        Jurusan = document.getElementById("Jurusan").value;
+        Tgl = document.getElementById("Tgl").value;
+      }
+
+      function displayInput() {
+        document.getElementById("nick").innerHTML = "Nama : " + nama;
+        document.getElementById("test2").innerHTML = "Kelas : " + Kelas;
+        document.getElementById("test3").innerHTML = "Jurusan : " + Jurusan;
+        document.getElementById("test4").innerHTML = "Tanggal Lahir : " + Tgl;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  background-color: #00ffbf;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00b37d;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
